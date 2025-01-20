@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!-- we use the head attribute here to start off the program and input the title and the charset -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abode</title>
+    <style>
+        /* style is used to enable the css part of the program where attributes like header, body and nav are predominantly used */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #da9292;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #fed8e2;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ff3366;
+        }
+        .content {
+            padding: 2em;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .card {
+            background-color: white;
+            padding: 1em;
+            margin: 1em 0;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            font-size: 1.1em;
+        }
+        form input[type="submit"]:hover {
+            background-color: #ff3366;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yogita Damodaran</h1>
+        <p>Join me on a creative and fun journey!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="home">
+            <h2>Home Page</h2>
+            <div class="card">
+                <p> Greetings! If you've stumbled across, let me give you a brief of what <span>Yogita Damodaran</span> holds within.
+                    This is <b>Yogita Damodaran</b> and a little something about me is the fact that <span>I'm not as predictable as my name sounds.</span>
+                    Hailing from northern and southern parts of the country, I hold great value of cultures, styles and rituals.
+                    Cherry on the cake is my <strong>fluency in 5 languages</strong> that open doors for me to interact and mingle with various people, making me approachable, 
+                    not to forget the base of this cake being my bubbly personality!</p>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog Page</h2>
+            <div class="card">
+                <p>Check out my latest creative adventures here!
+                    <a href="http://127.0.0.1:5500/activity7.html">Activity 1</a>
+                    <a href="http://127.0.0.1:5500/activity7.html">Activity 2</a>
+                    <a href="http://127.0.0.1:5500/activity7.html">Activity 3</a>
+                    <a href="http://127.0.0.1:5500/activity7.html">Activity 4</a>
+                    <a href="http://127.0.0.1:5500/activity7.html">Activity 5</a>
+                    <a href="http://127.0.0.1:5500/activity7.html">Activity 6</a>
+                    <a href="http://127.0.0.1:5500/activity7.html">Activity 7</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Yogita Damodaran. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
